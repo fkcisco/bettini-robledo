@@ -1,0 +1,1580 @@
+/*Reseteo de classes definidas por los navegadores */
+* {
+    margin: 0;
+    text-decoration: none;
+    padding: 0;
+
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.iconHeader {
+    width: 15px;
+}
+
+/* Stilos Footer */
+
+footer ul li a {
+    color: rgb(77, 75, 75);
+}
+
+footer .fondoGrisOscuro p {
+    color: #ffffff;
+    text-align: left;
+    padding: 5px 0;
+}
+
+footer .displayInlineBlock {
+    vertical-align: top;
+}
+
+.footerImg {
+    margin-right: 20px;
+}
+
+.sectionProducto {
+    color: black;
+    padding: 15px 30px;
+    border-radius: 0 25px 0 25px;
+    display: flex;
+    column-gap: 100px;
+    background-image: linear-gradient(to top,#e7e7e7e7 0%,rgba(255, 255, 255, 0) 50%);
+    flex-direction: row;
+}
+
+.sectionProducto ul li {
+    text-align: left;
+    margin: 10px 5px 10px 0;
+    font-weight: 700;
+}
+
+.sectionProducto p {
+    color: #646464;
+    padding: 5px 0 10px 0;
+}
+
+.sectionProducto h4 {
+    padding: 15px 0 5px 0;
+    color: #ff7a5a;
+    font-family: bree, sans-serif;
+}
+
+.sectionProducto ol li::marker {
+    font-size: 1.4rem;
+    font-family: bree, sans-serif;
+    color: red;
+
+}
+
+.sectionProducto ol {
+    margin-left: 20px;
+}
+
+
+.especificacionesTecnicas {
+    border-radius: 0 5px 0 5px;
+    overflow: hidden
+}
+
+
+.itemSectionProductos {
+    border-bottom: 2px solid #ff7a5a;
+    padding: 15px 0 30px 0;
+}
+
+.itemSectionProductos:last-child {
+    border-bottom: 0;
+    padding: 15px 0 30px 0;
+}
+
+/*.tituloDetalle {
+    background-color: red;
+    border-radius: 0 15px 0 15px;
+    padding: 15px 15px;
+    color: white;
+}*/
+
+.datosContacto {
+    width: 32%;
+    text-align: center;
+    border-right: 1px solid grey;
+}
+
+.datosContacto:last-child {
+    border-right: 0;
+}
+
+/*#empresa section {
+    background-color: #f3f0f0;
+    border-radius: 0 15px 0 15px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}*/
+
+#empresa section h2,
+#comex section h2,
+#empresa section p,
+#comex section p,
+#empresa section ul,
+#comex section ul {
+    margin-left: 30px;
+}
+
+#exportacion {
+    background-image: url(../images/empresa-exportacion.png);
+    display: flex;
+    height: 60vh;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#exportacion p,
+#exportacion span,
+#exportacion h2 {    
+    color: white;
+}
+
+#cordoba {
+    background-image: url(../images/empresa-cordoba.png);
+    display: flex;
+    height: 60vh;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cordoba p,
+#cordoba span,
+#cordoba h2 {    
+    color: white;
+}
+
+#responsabilidad {
+    background-image: url(../images/responsabilidad-empresarial.webp);
+    display: flex;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#responsabilidad p,
+#responsabilidad span,
+#responsabilidad h2 {    
+    color: white;
+}
+
+
+
+
+#planta,
+#planta ul li {
+    text-align: center !important;
+}
+
+
+
+
+
+/*  ESTILOS PRODUCTO SINGLE*/
+
+.itemSectionProductos {
+    display: grid;
+    grid-template-areas:
+    "iconos descripcion";
+    grid-template-columns: 15% 80%;
+    column-gap: 5%;
+}
+.imgDetalle {
+    grid-area: iconos;
+}
+.especificacionesDuracion {
+    grid-area: descripcion;
+}
+
+
+#presentacionProducto {
+    background-image: linear-gradient(to top,#e7e7e7e7 0%,rgba(255, 255, 255, 0) 50%);
+}
+
+.itemDetalleProducto {
+    display: flex;
+    justify-content: space-evenly;
+    place-items: center;
+    column-gap: 15px;display: flex;
+    justify-content: space-evenly;
+    place-items: center;
+    column-gap: 15px;
+}
+
+#pastasRellenas {
+    background-image: url(../images/empresa-cordoba.png);
+    display: flex;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 25px 0;
+    margin-bottom: 50px;
+
+}
+
+.familiaProducto h2 {
+    color: white;
+}
+
+
+
+/* Stilos Sidebar*/
+
+
+aside img {
+    border-radius: 0 15px 0 15px;
+}
+
+/* Stilos Main */
+
+
+
+#detalleProducto article,
+#productoSingle article {
+    margin: 10px 0 30px 0;
+}
+
+#detalleProducto article:first-child {
+    margin: 15px auto
+}
+
+#productoSingle article:first-child {
+    margin: 10px 0 0 0;
+}
+
+#productoSingle h1,
+#detalleProducto h1 {
+    padding: 0px 0 30px 0;
+    text-align: center;
+}
+
+#productoSingle p,
+#detalleProducto p {
+    padding: 0 0 5px 0;
+}
+
+.container {
+    width: 1090px;
+    margin: 0 auto;
+}
+
+#detalleReceta main,
+#detalleProducto main {
+    margin-top: 20px;
+}
+
+
+#empresa article img,
+#comex article img {
+    border-radius: 0 15px 0 15px;
+}
+
+
+p {
+    color: #646464;
+    padding: 15px 0;
+}
+
+p span {
+    font-weight: 700;
+}
+
+#home p {
+    text-align: center;
+}
+
+#home footer p {
+    text-align: left;
+}
+
+.listadoProductos p {
+    text-align: center;
+}
+
+#empresa aside p,
+#comex aside p {
+    text-align: center;
+}
+
+/*#empresa main,
+#comex main,
+#contacto main {
+    padding: 20px 0 40px 0;
+}*/
+
+
+
+
+#empresa main ul li,
+#comex main ul li
+ {
+    text-align: left;
+    list-style-type: none;
+    margin: 5px 10px;
+}
+
+
+
+
+.centrado {
+    text-align: center;
+}
+
+.btn {
+    background-color: red;
+    padding: 15px 10px;
+    color: #ffffff;
+    font-weight: 700;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    width: 96%;
+    margin: 10px 0 0 0;
+
+}
+
+.btn:hover {
+    background-color: #2c2b2b;
+}
+
+.fondoGrisClaro {
+    background-color: #c7c7c7;
+}
+
+
+.fondoGrisOscuro {
+    background-color: #5e5e5e;
+    padding: 30px 30px;
+}
+
+#contacto textarea,
+#contacto select,
+#contacto input,
+#contacto label {
+    display: list-item;
+    width: 100%;
+}
+
+.displayInlineBlock {
+    display: inline-block;
+}
+
+.displayInline {
+    display: inline;
+}
+
+.width20 {
+    width: 19%;
+}
+
+
+
+
+.width80 {
+    width: 80%;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+#productos h1,
+#recetas h1 {
+    text-align: center;
+}
+
+.imgReceta {
+    width: 100%;
+}
+
+
+
+.portada {
+    width: 100%;
+    height: 538px;
+    background-image: url("../images/portada-index.png");
+    background-repeat: no-repeat;
+}
+
+
+
+.mapa {
+    width: 100%;
+    height: 450px;
+}
+
+label {
+    list-style-type: none;
+    margin: 10px 0 0 0;
+}
+
+input {
+    padding: 10px 5px;
+    color: grey;
+    border: 0px;
+    border-bottom: 2px solid grey;
+    font-size: 100%;
+}
+
+select {
+    padding: 10px 5px;
+    color: grey;
+    border: 0;
+    border-bottom: 2px solid grey;
+    font-size: 100%;
+}
+
+textarea {
+    border: 0;
+    border-bottom: 2px solid grey
+}
+
+.textoGrande {
+    font-size: 150%;
+}
+
+.textoChico {
+    font-size: 75%;
+}
+
+#productos p,
+#recetas p {
+    padding: 5px 0;
+}
+
+.imgCatalogo {
+    width: 75% !important;
+    margin: 0 auto;
+}
+
+.tituloProducto {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+.especificacionesProducto {
+    background-color: gainsboro;
+    color: black;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+#recetaSingle .mainAside ul li,
+#detalleProducto .mainAside ul li {
+    border: 1px solid red;
+    padding: 15px 10px;
+    text-align: center;
+    margin: 0;
+    font-weight: 700;
+}
+
+#recetaSingle .mainAside ul li:first-child,
+#detalleProducto .mainAside ul li:first-child {
+    background-color: red;
+    color: white;
+    border-radius: 0 15px 0 0;
+}
+
+#recetaSingle .mainAside ul li:last-child,
+#detalleProducto .mainAside ul li:last-child {
+    border-radius: 0 0 0 15px;
+}
+
+
+#recetaSingle .mainAside ul li:first-child a,
+#detalleProducto .mainAside ul li:first-child a {
+    color: white;
+}
+
+#recetaSingle .mainAside ul li:first-child a:hover,
+#detalleProducto .mainAside ul li:first-child a:hover {
+    color: red;
+}
+
+#precetaSingle .mainAside ul li:hover,
+#detalleProducto .mainAside ul li:hover {
+    background-color: #c7c7c7;
+
+}
+
+.imgDetalle {
+    vertical-align: top;
+
+}
+
+.separador {
+    margin: 0;
+    height: 10px;
+    border: none;
+    background-image: radial-gradient(currentColor 1px, transparent 1px);
+    background-position: 1px 1px;
+    background-size: 5px 5px;
+    background-repeat: repeat;
+    opacity: .3;
+}
+
+.recetaResumen {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.recetaResumenImg {
+    width: 50%;
+}
+.recetaResumenTexto {
+    font-weight: 700;
+}
+
+
+
+/*ESTILOS DE ELEMENTOS*/
+
+html {
+    font-size: 16px;
+    font-family: roboto, sans-serif;
+}
+
+.logo {
+    padding: 10px 0;
+    width: 180px;
+}
+
+nav {
+    background-color: #eeeeee;
+}
+
+.headerMenuElementos li {
+    text-align: center;
+    padding: 15px 25px;
+    color: rgb(77, 75, 75);
+}
+
+.headerMenuElementos li a {
+    color: rgb(77, 75, 75);
+}
+
+.headerMenuElementos li:hover,
+.headerMenuElementos li:hover a,
+.active,
+.active a {
+    background-color: red;
+    color: white !important;
+    font-weight: 700;
+}
+
+.redesSociales ul li {
+    padding: 5px 5px;
+}
+
+#headerTop {
+    padding: 5px 0;
+}
+
+#menuHamburguesa {
+    display: none;
+}
+
+
+.vCard {
+    width: 24%;
+}
+
+#empresa .vCard,
+#comex .vCard,
+#contacto .vCard {
+    width: 100%;
+}
+
+#banners p {
+    text-align: center;
+}
+
+#home .vCard img,
+#banners .vCard img {
+    width: 100%;
+    border-radius: 0 15px 0 15px;
+    box-shadow: 0px 0px 15px #8f8b8b;
+    border: 3px solid white;
+    transition: all 1s;      
+    
+}
+
+#home .vCard img:hover,
+#banners  .vCard img:hover {
+    box-shadow: 0px 0px 25px black;   
+    
+
+}
+
+
+
+footer ul li {
+    text-align: center;
+}
+
+
+.footerSecundario p {
+    text-align: left;
+}
+
+footer {
+    background-image: url(../images/img-footer.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footerSecundarioFondo {
+    /*background-color: rgb(0 0 0 / 50%);*/
+    background-image: linear-gradient(to top,rgba(0, 0, 0, 1) 0%,rgba(0, 0, 0, 0) 100%);
+    padding: 30px 30px;
+
+}
+
+.footerSecundarioFondo p {
+    color: white;
+    padding: 5px 0;
+
+}
+
+.columna,
+.columna ul li a {
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.columna ul li a:hover {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2rem;
+    padding: 30px 0;
+    font-family: bree, sans-serif;
+}
+
+h2 {
+    font-size: 1.8rem;
+    padding: 25px 0;
+    font-family: bree, sans-serif;
+}
+
+h3 {
+    font-size: 1.6rem;
+    padding: 20px 0;
+    font-family: bree, sans-serif;
+}
+
+h4 {
+    font-size: 1.4rem;
+    padding: 15px 0;
+    font-family: bree, sans-serif;
+}
+
+img {
+    width: 100%;
+    /*max-width: 100%;*/
+}
+
+#home section,
+#recetas section,
+.footerConjuntoColumnas {
+    padding: 100px 0;
+}
+
+#productos section {
+    padding: 50px 0;
+}
+
+#empresa section,
+#comex section {
+    padding: 0 0 50px 0
+}
+
+#productos section:first-child,
+#home section:first-child,
+#recetas section:first-child {
+    padding: 0;
+}
+
+.footerSecundario {
+    padding: 20px 0;
+}
+
+.fondoGrisClarito {
+    background-image: linear-gradient(to bottom, #f7f7f7, #e1e1e1);
+}
+
+
+.titulo {
+    color: #2c2b2b;
+    font-family: 'Mr Dafoe', cursive;
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+
+#home #productos {
+    background-image: url(../images/fondo-productos.webp);
+}
+
+.botonesCentral {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    grid-column-gap: 15px;
+
+}
+
+.separadorItalia {
+    width: 100%;
+    text-align: center;
+    padding: 0 0 25px 0;
+    }
+
+.separadorImg {
+    width: 100px;
+    margin: 0 auto;
+}
+    
+
+.btnNegro {
+    background-color: black;
+    padding: 15px 10px;
+    color: #ffffff;
+    font-weight: 700;
+    border-radius: 0 5px 0 5px;
+    margin: 20px 0 0 0;
+
+}
+
+.btnRojo {
+    background-color: red;
+    padding: 15px 10px;
+    color: #ffffff;
+    font-weight: 700;
+    border-radius: 0 5px 0 5px;
+    margin: 20px 0 0 0;
+
+}
+
+.btnBlanco {
+    background-color: white;
+    padding: 15px 10px;
+    color: black;
+    font-weight: 700;
+    border-radius: 0 5px 0 5px;
+    margin: 20px 0 0 0;
+
+}
+
+.btn:hover {
+    background-color: #2c2b2b;
+}
+
+.footerCopyright {
+    background-color: black;
+    padding: 10px 0;
+}
+.footerCopyright p {
+    color: #ffffff;
+}
+
+/* EMPRESA */
+
+.contenidoSidebar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* CONTACTO */
+
+#gridContacto {
+    display: grid;
+    grid-template-areas:
+    "datos-contacto formulario-contacto"
+    "mapa-contacto mapa-contacto";
+    grid-template-columns: 30% 70%;
+    grid-row-gap: 30px;
+}
+
+#datosContacto {
+    grid-area: datos-contacto;
+}
+
+#formularioContacto {
+    grid-area: formulario-contacto;
+}
+
+#mapaFormulario {
+    grid-area: mapa-contacto;
+}
+
+
+
+/* FLEX + GRIDS + BOX MODELIN */
+
+header {
+    display: grid;
+    grid-template-areas:
+        "header-top"
+        "header-logo"
+        "header-menu";
+    grid-template-columns: 100%;
+}
+
+#headerTop {
+    grid-area: header-top;
+}
+
+#headerLogo {
+    grid-area: header-logo;
+    display: flex;
+    justify-content: center;
+}
+
+#headerMenu {
+    grid-area: header-menu;
+}
+
+.headerTopElementos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.headerMenuElementos {
+    display: flex;
+    justify-content: center;
+}
+
+#menuBar {
+    display: none;
+}
+
+.conjuntoVcardHorizontal {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.footerConjuntoColumnas {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footerSecundario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redesSociales {
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+}
+
+.contenidoSidebar {
+    display: grid;
+    grid-template-areas: "main-content main-aside";
+    grid-template-columns: 80% 20%;
+    grid-column-gap: 15px;
+}
+
+.mainContent {
+    grid-area: main-content;
+}
+
+.mainAside {
+    grid-area: main-aside;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0px;
+}
+
+.detalleProducto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 20px;
+    align-items: stretch;
+}
+
+.especificacionesTecnicas {
+    width: 20%;
+}
+
+.listadoProductos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    text-align: center;
+    row-gap: 15px;
+}
+
+#recetas .listadoProductos > div {
+    width: 32%;
+}
+
+.textoGrande {
+    padding: 5px 0 0 0 !important;
+}
+.textoChico {
+    padding:0 0 5px 0 !important}
+
+
+
+#recetaSingle {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer"
+    ;
+    grid-template-columns: 100%;
+}
+
+#recetaSingle main {
+    display: grid;
+    grid-template-areas:
+        "titulo-receta"
+        "detalle-receta"
+    ;
+    grid-template-columns: 100%;
+    grid-column-gap: 15px;
+    grid-row-gap: 25px;
+    grid-template-rows: 70vh auto;
+}
+
+#detalleReceta {
+    grid-area: detalle-receta;
+    display: grid;
+    grid-template-areas:
+        "presentacion-receta item-receta"
+        "ingredientes-receta item-receta"
+        "proceso-receta item-receta"
+    ;
+    grid-template-columns: 80% 20%;
+    grid-row-gap: 25px;
+    grid-column-gap: 15px;
+}
+
+#presentacionReceta {
+    grid-area: presentacion-receta;
+}
+
+#tituloReceta{
+    grid-area: titulo-receta;
+    display: flex;
+    background-image: url(../images/receta-base.png);
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#detalleReceta {
+    grid-area: detalle-receta;
+}
+
+#ingredientesReceta {
+    grid-area: ingredientes-receta
+}
+
+#procesoReceta {
+    grid-area: proceso-receta;
+}
+
+#itemReceta {
+    grid-area: item-receta;
+}
+
+.portadaImg{
+    height: 50vh;
+    width: 100%;
+
+}
+
+.degradeNegro {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top,rgba(0, 0, 0, 1) 0%,rgba(0, 0, 0, 0) 70%);
+}
+
+footer h4 {
+    background-color: black;
+    color: white;
+    padding:10px 20px;
+    margin-bottom: 15px;
+    border-radius: 0 10px 0 10px;
+    text-shadow: none;
+}
+
+
+/* EMPRESA */
+
+.empresaSeccion {
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+    justify-content: space-between;
+    align-items: center;    
+
+}
+
+.empresaImg {
+    width: 50%;
+}
+
+.empresaContenido {
+    width: 50%;
+    text-align: center;
+
+}
+
+#diferencia ul li {
+    text-align: center !important;
+}
+
+#empresa section,
+#comex section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#comex ul li {
+    text-align: center !important;
+}
+
+#empresa section:last-child,
+#comex section:last-child,
+#contacto #banners {
+    margin-top: 100px;
+    margin-bottom: 0;    
+    padding: 100px 0;
+}
+
+
+#procesoReceta ol li {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+
+#tituloReceta h1 {
+    text-align: center;
+}
+
+/* Desafio Index y pagina de receta */
+
+#home {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-columns: 100%;
+}
+
+#productoSingle {
+    display:grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-columns: 100%;
+}
+
+
+.detalleTitulo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.detalleTitulo span {
+    color: yellow;
+    font-weight: 700;
+    padding: 10px 0 10px 0;
+    /*border-bottom: 2px solid yellow;*/
+    width: auto;
+    display: inline-block;
+}
+.detalleTitulo h1 {
+    padding: 0 0 50px 0;
+    color: white;
+    font-size: 3rem !important
+}
+
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+#home section {
+    display: flex;
+    flex-direction: column;
+}
+
+#ingredientesReceta input[type="checkbox"],
+#ingredientesReceta .checkbox {
+    display: inline-block;
+}
+
+#ingredientesReceta input[type="checkbox"] {
+    margin-right: 15px;
+}
+
+.detalle {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+
+/* ELIMINAR
+
+.miniHeader {
+    height: 25px;
+    padding: 10px 0 10px 0;
+}
+
+
+.derecha {
+    float: left;
+}
+
+.izquierda {
+    float: right;
+}
+
+
+
+.sectionPadding {
+    padding: 50px 0;
+}
+
+.mainContent {
+    width: 78%;
+    margin-right: 1%;
+}
+
+.mainAside {
+    width: 20%;
+    float: right;
+}
+
+
+aside {
+    width: 20%;
+}
+
+
+
+*/
+
+/* @MEDIA QUERY*/
+
+@media (max-width: 480px) {
+
+    .container {
+        width: 95%;
+    }
+
+    header {
+        grid-template-areas:
+            "header-top header-top"
+            "header-logo header-menu";
+        grid-template-columns: 70% 30%;
+        grid-template-rows: auto auto;
+    }
+
+    .headerTopElementos {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    #menuBar {
+        display: flex;
+        align-content: center;
+        justify-content: end;
+        height: 130px;
+        padding-right: 15px;
+
+    }
+
+    .headerMenuElementos {
+        display: none;
+    }
+
+    .menuBarImg {
+        width: 30px;
+    }
+
+    #headerLogo {
+        justify-content: start;
+        padding-left: 15px;
+    }
+
+    nav {
+        background-color: #ffffff;
+    }
+
+    .footerConjuntoColumnas {
+        flex-direction: column;
+    }
+
+    .footerSecundario {
+        flex-direction: column;
+    }
+
+    .footerSecundario p {
+        text-align: center;
+    }
+
+    .conjuntoVcardHorizontal {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        text-align: center;
+    }
+
+    #empresa .vCard,
+    #comex .vCard,
+    #contacto .vCard,
+    .vCard {
+        width: 100%;
+    }
+
+    #home #productos img {
+        width: 80%;
+    }
+
+    .portadaImg{
+        height: 75vh;
+
+    }
+
+    .botonesCentral {
+        flex-direction: column;
+        text-align: center;    
+    }
+
+    .listadoProductos {
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        align-content: center;
+    }
+    
+    #recetas .listadoProductos > div {
+        width: 100%;
+    }
+
+    .titulo {
+        font-size: 2rem;
+    }
+
+    
+
+
+
+}
+
+
+@media (min-width: 481px) and (max-width: 680px) {
+
+    #empresa .vCard,
+    #comex .vCard,
+    #contacto .vCard,
+    .vCard {
+        width: 48%;
+    }
+
+    .conjuntoVcardHorizontal {
+        flex-wrap: wrap;
+    }
+
+    .portadaImg{
+        height: 60vh;
+        }
+
+
+
+}
+
+@media (max-width: 680px) {
+
+    h2 {
+        text-align: center;
+    }
+
+    .contenidoSidebar {
+        display: grid;
+        grid-template-areas:
+            "main-content"
+            "main-aside";
+        grid-template-columns: 100% 100%;
+        grid-column-gap: 0;
+    }
+
+    .mainAside {
+        flex-direction: row;
+        flex-wrap: wrap;
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+    }
+
+  
+    #detalleProducto .mainAside {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        grid-row-gap: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .portadaImg{
+        height: 60vh;
+
+    }
+
+    #detalleReceta {
+        grid-area: detalle-receta;
+        display: grid;
+        grid-template-areas:
+            "presentacion-receta"
+            "item-receta"
+            "ingredientes-receta "
+            "proceso-receta"
+        ;
+        grid-template-columns: 100%;
+        grid-column-gap: 15px;
+    }
+
+    .mainAside { 
+        justify-content: space-between;
+    }
+
+    .recetaResumen {
+        display: flex;
+        flex-direction: column;;
+        align-items: center;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        width: 25%;
+    }
+    .recetaResumenImg {
+        width: 100%;
+    }
+    .recetaResumenTexto {
+        text-align: center;
+    }
+
+    #recetaSingle h2 {
+        text-align: center;
+    }
+
+    #botonVolverReceta {
+        display: none;
+    }
+
+    .detalle {
+        text-align: center;
+    }
+
+    .sectionProducto {
+        flex-direction: column;
+    }
+
+
+    .empresaSeccion {
+        flex-direction: column;
+        padding: 25px 0;
+        justify-content: space-between;
+        align-items: center;     
+    
+    }
+
+    #presentacionProducto .empresaSeccion {
+        flex-direction: column-reverse;        
+    
+    }
+    
+    .empresaImg {
+        width: 100%;
+    }
+    
+    .empresaContenido {
+        width: 100%;
+    }
+    
+    #empresa section,
+    #comex section {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    
+
+    #empresa section:first-child,
+    #comex section:first-child,
+    #productos section:first-child {
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+    
+
+    #empresa section h2, 
+    #comex section h2, 
+    #empresa section p,
+    #comex section p, 
+    #empresa section ul,
+    #comex section ul {
+        margin-left: 0;
+    }
+
+    #cordoba {
+        height: auto;
+    }
+    
+    #diferencia h2,
+    #diferencia p,
+    #empresa main ul li,
+    #comex main ul li {
+        text-align: center;
+    }
+
+    .itemSectionProductos {
+        display: grid;
+        grid-template-areas:
+        "iconos"
+        "descripcion";
+        grid-template-columns: 100%;
+    }  
+    
+    #detalleProducto h1 {
+        text-align: center;
+    }
+
+    .imgDetalle {
+        width: 20%;
+        margin: 0 auto;
+    }
+
+    .especificacionesDuracion {
+        text-align: center;
+    }
+
+    .sectionProducto {
+        padding: 15px 15px;
+    }
+
+    #detalleProducto ul li {
+        text-align:center;
+    }
+
+
+    #gridContacto {
+        display: grid;
+        grid-template-areas:
+        "datos-contacto"
+        "formulario-contacto"
+        "mapa-contacto";
+        grid-template-columns: 100%;
+        grid-row-gap: 20px;
+    }
+
+    #datosContacto {
+        text-align: center;
+    }
+
+    .contactoBorder {
+        width: 80%;
+        border-bottom: 2px solid grey;
+        margin: 0 auto;
+    }
+        
+
+}
+
+ 
+
+@media (min-width: 481px) and (max-width: 1023px) {
+    .container {
+        width: 90%;
+    }
+
+    .headerMenuElementos li {
+        padding: 15px 2%;
+    }
+
+    .conjuntoVcardHorizontal {
+        justify-content: center;
+    }
+
+    #recetas .listadoProductos > div {
+        width: 49%;
+    }
+
+}
+
+
+
+@media (min-width: 1024px) {
+    .container {
+        width: 75%;}
+
+        
+
+    
+
+    }
