@@ -618,7 +618,19 @@ nav {
 }
 
 #home .vCard img,
-#banners .vCard img {
+#banners .vCard img,
+.imgReceta {
+    width: 100%;
+    border-radius: 0 15px 0 15px;
+    box-shadow: 0px 0px 15px #8f8b8b;
+    border: 3px solid white;
+    transition: all 1s;      
+    
+}
+
+#home .vCard img,
+#banners .vCard img,
+.imgReceta {
     width: 100%;
     border-radius: 0 15px 0 15px;
     box-shadow: 0px 0px 15px #8f8b8b;
@@ -628,10 +640,23 @@ nav {
 }
 
 #home .vCard img:hover,
-#banners  .vCard img:hover {
-    box-shadow: 0px 0px 25px black;   
+#banners  .vCard img:hover,
+.imgReceta:hover {
+    box-shadow: 0px 0px 25px black; 
+    transform: rotate(-3deg);  
     
 
+}
+
+#productos .vCard img {
+    width: 100%;  
+    padding: 0;  
+    transition: all 1s; 
+}
+
+#productos .vCard img:hover {
+    box-shadow: 0px 0px 15px #8f8b8b;
+    transform: rotate(-3deg);
 }
 
 
@@ -772,7 +797,13 @@ img {
     font-weight: 700;
     border-radius: 0 5px 0 5px;
     margin: 20px 0 0 0;
+    transition: all 1s;
 
+}
+
+.btnNegro:hover {
+    background-color: red;
+    padding: 15px 30px;
 }
 
 .btnRojo {
@@ -782,7 +813,13 @@ img {
     font-weight: 700;
     border-radius: 0 5px 0 5px;
     margin: 20px 0 0 0;
+    transition: all 1s;
 
+}
+
+.btnRojo:hover {
+    background: black;
+    padding: 15px 30px;
 }
 
 .btnBlanco {
@@ -792,7 +829,13 @@ img {
     font-weight: 700;
     border-radius: 0 5px 0 5px;
     margin: 20px 0 0 0;
+    transition: all 1s;
+}
 
+.btnBlanco:hover {
+    background-color: red;
+    padding: 15px 30px;
+    color: white;
 }
 
 .btn:hover {
@@ -838,6 +881,44 @@ img {
     grid-area: mapa-contacto;
 }
 
+
+/* EFECTOS DESAFIO CLASE 10 GIT*/
+
+@keyframes bajar {
+    0%{ transform: translate(0px, 0px);}    
+    50% { transform: translate(0px, 10px);}    
+    100% { transform: translate(0px, 0px);} 
+ }
+
+ .animacionBajar {
+    height: 50px;
+    animation-name: bajar;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 0;
+ }
+
+ .animacionBajar:hover {
+    height: 60px;
+ }
+
+ .rotar3 {
+     transform: rotate(-3deg);
+ }
+
+ .blancoYnegro {
+    filter: grayscale(1);
+    transition: all 1s;
+ }
+ .blancoYnegro:hover {
+    filter: grayscale(0);
+ }
+ 
 
 
 /* FLEX + GRIDS + BOX MODELIN */
@@ -949,6 +1030,7 @@ header {
     justify-content:space-evenly;
     text-align: center;
     row-gap: 15px;
+    column-gap: 14px;
 }
 
 #recetas .listadoProductos > div {
