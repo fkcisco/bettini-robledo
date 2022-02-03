@@ -9,13 +9,16 @@
     <meta name="author" content="Francisco Robledo">
     <meta name="robots" content=" index,follow">
     <meta name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Bettini | Fábrica de Pastas Italianas</title>
+    <title>Bettini Bootstrap | Fábrica de Pastas Italianas</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style-flex-grid.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style-boostramp.css">
+    
     <link
         href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
-        rel="stylesheet" />
+        rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Mr+Dafoe:regular" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif:regular" rel="stylesheet" />
 </head>
@@ -41,21 +44,33 @@
                 </div>
             </div>
         </div>
-        <div id="headerLogo">
+        <div class="mx-auto d-block">
             <a href="index.html">
-                <img class="logo" src="images/logo-header.webp" alt="Logo Pastas Bettini">
+                <img class="logo my-2" src="images/logo-header.webp" alt="Logo Pastas Bettini">
             </a>
         </div>
 
-        <nav id="headerMenu">
-            <ul class="headerMenuElementos">
-                <li class="active"><a href="index.html">Inicio</a></li>
-                <li><a href="empresa.html">Empresa</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="comex.html">Comex</a></li>
-                <li><a href="recetas.html">Recetas</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="d-none d-sm-block">            
+
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="empresa.html">Empresa</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="recetas.html">Recetas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+              </ul>
+
+
             <div id="menuBar">
                 <img class="menuBarImg" src="images/bars-solid.svg" alt="Menu Hamburguesa">
             </div>
@@ -64,131 +79,142 @@
         </nav>
     </header>
     <main>
-        <section>
+        
+        <section class="container-fluid">
             <article>
-                <img class="portadaImg" src="images/portada-index.png" alt="">
-
-                <div class="container">
-                    <a href="#home-empresa"><img class="animacionBajar" src="images/angle-double-down-solid.svg" alt=""></a>
-                </div>
+                <img src="images/portada-index.png" class="img-fluid" alt="Portada index">
+                    <a href="#home-empresa"><img class="animacionBajar" src="images/angle-double-down-solid.svg" alt=""></a>                
             </article>
         </section>
-        <section id="home-empresa">
-            <article class="container">
-                <h2 class="titulo centrado">Calidad, Sabor y Prestigio</h2>
-                <div class="separadorItalia">
-                    <img class="separadorImg" src="images/italia.png" alt="">
+
+        <section id="home-empresa" class="container">
+            <h2 class="titulo centrado">Calidad, Sabor y Prestigio</h2>
+            <img class="separadorImg" src="images/italia.png" alt="">
+            <article class="row">
+                <div class="col-lg-6 col-sm-12">
+                    <img class="rotar3" src="../images/empresa-prestigio.webp" alt="">
                 </div>
-                <p>Palabras que envuelven una historia de más de 80 años en la fabricación de pastas italianas.</p>
+                <div class="col-lg-6 col-sm-12">
+                    <p>Palabras que envuelven una historia de más de 80 años en la fabricación de pastas italianas.</p>
                 <p>Desde Italia, la familia Bettini llegó a un pintoresco barrio Cordobés donde comenzaron con una
                     pequeña fábrica de pastas, tradición de su familia. Combinaron sus exquisitas recetas con materias
                     primas que encontraron en el país y lograron así las pastas más reconocidas del mercado.</p>
                 <p>Sin pausa fueron creciendo e invirtiendo en tecnología, normas de calidad, capacitación, lo que los
                     llevó a convertirse en lo que es hoy una fábrica modelo.</p>
+
+                </div>
+                
+                
             </article>
         </section>
-        <section class="fondoGrisClarito" id="productos">
-            <article class="container">
+        <section class="container-fluid fondoGrisClarito" id="productos">
+            <div class="container justify-content-center">
                 <h2 class="titulo centrado">Conocé Nuestras Líneas de Productos</h2>
-                <div class="separadorItalia">
-                    <img class="separadorImg" src="images/italia.png" alt="">
-                </div>
-                <div class="conjuntoVcardHorizontal">
-                    <div class="vCard">
+                <img class="separadorImg justify-content-center" src="images/italia.png" alt="">
+            </div>
+            <article class="container ">
+
+                <div class="row my-5">
+                    <div class="col-lg-3 col-sm-6 col-12">
                         <a href="productos.html#pastasRellenas">
                             <img src="images/linea-pastas-rellenas.webp" alt="Pastas Rellenas">
                             <p class="bold">Pastas Rellenas</p>
                         </a>
                     </div>
-                    <div class="vCard">
+                    <div class="col-lg-3 col-sm-6 col-12">
                         <a href="productos.html#pastasFrescas">
                             <img src="images/linea-pastas-frescas.webp" alt="Pastas Frescas">
                             <p class="bold">Pastas Frescas</p>
                         </a>
                     </div>
-                    <div class="vCard">
+                    <div class="col-lg-3 col-sm-6 col-12">
                         <a href="productos.html#discosEmpanadas">
                             <img src="images/linea-empanadas.webp" alt="Tapas Empanadas">
                             <p class="bold">Discos Empanadas</p>
                         </a>
                     </div>
-                    <div class="vCard">
+                    <div class="col-lg-3 col-sm-6 col-12">
                         <a href="productos.html#discosPascualinas">
                             <img src="images/linea-pascualinas.webp" alt="Tapas Pascualinas">
                             <p class="bold">Discos Pascualinas</p>
                         </a>
                     </div>
                 </div>
-                <div class="botonesCentral">
-                    <a class="btnNegro" href="productos.html">Ver todos los productos</a>
-                    <a class="btnBlanco" href="productos.html">Escribinos un Mensaje</a>
-                </div>
+                <div class="row justify-content-center">                  
+                
+
+                <a href="productos.html"><button type="button" class="btn btn-primary mx-2">Ver Productos</button></a>
+                <a href="productos.html"><button type="button" class="btn btn-secondary mx-2">Enviar whatsapp</button></a>
+
+            </div>
 
             </article>
         </section>
-        <section id="recetas">
-            <article class="container">
+        <section id="recetas" >
+            <div class="container">
                 <h2 class="titulo centrado">Conocé Nuetras Recetas</h2>
-                <div class="separadorItalia">
-                    <img class="separadorImg" src="images/italia.png" alt="">
-                </div>
-                <div class="conjuntoVcardHorizontal">
-                    <div class="vCard">
+                <img class="separadorImg" src="images/italia.png" alt="">
+            </div>
+            <article class="container">                                
+                <div class="row py-5">
+                    <div class="col-lg-3 col-sm-6 col-12">
                         <a href="recetas/ravioles-salsa-pesto.html">
-                            <img src="images/receta-salsa-alfredo.webp" alt="Salsa Alfredo">
+                            <img class="imgVcard" src="images/receta-salsa-alfredo.webp" alt="Salsa Alfredo">
                             <p class="bold">Salsa Alfredo</p>
                         </a>
                     </div>
-                    <div class="vCard">
+                    <div class="col-lg-3 col-sm-6 col-12">
                         <a href="recetas/ravioles-salsa-pesto.html">
-                            <img src="images/salsa-champignones.webp" alt="Salsa de Champiñones">
+                            <img class="imgVcard" src="images/salsa-champignones.webp" alt="Salsa de Champiñones">
                             <p class="bold">Salsa de Champiñones</p>
                         </a>
                     </div>
-                    <div class="vCard">
+                    <div class="col-lg-3 col-sm-6 col-12">
                         <a href="recetas/ravioles-salsa-pesto.html">
-                            <img src="images/salsa-crema-burrata.webp" alt="Salsa Crema de Burrata">
+                            <img class="imgVcard" src="images/salsa-crema-burrata.webp" alt="Salsa Crema de Burrata">
                             <p class="bold">Salsa Crema de Burrata</p>
                         </a>
                     </div>
-                    <div class="vCard">
+                    <div class="col-lg-3 col-sm-6 col-12">
                         <a href="recetas/ravioles-salsa-pesto.html">
-                            <img src="images/salsa-de-ricotta-y-nuez.webp" alt="Salsa de Ricotta y Nuez">
-                            <p class="bold">Salsa de Ricotta y Nuez</p>
+                            <img class="imgVcard" src="images/salsa-de-ricotta-y-nuez.webp" alt="Salsa de Ricotta y Nuez">
                         </a>
+                            <p class="bold">Salsa de Ricotta y Nuez</p>
                     </div>
                 </div>
-                <div class="botonesCentral">
-                    <a class="btnRojo" href="recetas.html">Ver Más Recetas</a>
+                <div class="row justify-content-center">
+                    <a href="recetas.html"><button type="button" class="btn btn-primary mx-2">
+                        Ver Recetas</button>
+                    </a>
                 </div>
 
             </article>
         </section>
-        <section class="fondoGrisClarito">
+        <section class="container-fuir fondoGrisClarito">
             <article class="container">
-                <div class="conjuntoVcardHorizontal">
-                    <div class="vCard">
+                <div class="row py-5">
+                    <div class="col-lg-3 col-sm-6 col-12">
                         <a href="empresa.html#cordoba">
-                            <img class="batirlo" src="images/exportamos-productos.jpg"
+                            <img class="imgVcard" src="images/exportamos-productos.jpg"
                                 alt="Banner Desde Córdoba al Mundo">
                             <p class="bold">Desde Córdoba Al Mundo</p>
                         </a>
                     </div>
-                    <div class="vCard">
+                    <div class="col-lg-3 col-sm-6 col-12">
                         <a href="empresa.html#planta">
-                            <img src="images/raviolesmarcablanca.jpg" alt="Banner Nueva Planta">
+                            <img class="imgVcard" src="images/raviolesmarcablanca.jpg" alt="Banner Nueva Planta">
                         </a>
                         <p class="bold">Nueva Planta</p>
                     </div>
-                    <div class="vCard">
+                    <div class="col-lg-3 col-sm-6 col-12">
                         <a href="empresa.html#responsabilidad">
-                            <img src="images/recetasbettini.jpg" alt="Banner Responsabilidad Empresarial">
+                            <img class="imgVcard" src="images/recetasbettini.jpg" alt="Banner Responsabilidad Empresarial">
                             <p class="bold">Responsabilidad Social</p>
                         </a>
                     </div>
-                    <div class="vCard">
+                    <div class="col-lg-3 col-sm-6 col-12">
                         <a href="contacto.html">
-                            <img src="images/contacto.jpg" alt="Banner Contacto">
+                            <img class="imgVcard" src="images/contacto.jpg" alt="Banner Contacto">
                             <p class="bold">Contacto</p>
                         </a>
                     </div>
@@ -197,9 +223,9 @@
             </article>
         </section>
     </main>
-    <footer class="fondoGrisClaro">
-        <div class="container footerConjuntoColumnas">
-            <div class="columna">
+    <footer class="container-fluid fondoGrisClaro pt-5">
+        <div class="container row">
+            <div class="col-lg-3 col-sm-6 col-12">
                 <h4 class="centrado">Empresa</h4>
                 <ul>
                     <li><a href="empresa.html#calidad">Calidad, Sabor y Prestigio</a></li>
@@ -207,7 +233,7 @@
                     <li><a href="empresa.html#cordoba">Desde Córdoba al Mundo</a></li>
                 </ul>
             </div>
-            <div class="columna">
+            <div class="col-lg-3 col-sm-6 col-12">
                 <h4 class="centrado">Comex</h4>
                 <ul>
                     <li><a href="productos.html">Productos</a></li>
@@ -216,7 +242,7 @@
 
                 </ul>
             </div>
-            <div class="columna">
+            <div class="col-lg-3 col-sm-6 col-12">
                 <h4 class="centrado">Cocina</h4>
                 <!--LOS LINKS DE COMO COCINAR CADA TIPO DE PASTA LLEVARIA A CADA PRODUCTO-->
                 <!--POR ESO LINKIE TODOS AL MISMO TIPO DE PASTA-->
@@ -227,7 +253,7 @@
                     <li><a href="productos/raviol-pollo-carne-espinaca.html#comoCocinar">Como Cocinar Ñoquis</a></li>
                 </ul>
             </div>
-            <div class="columna">
+            <div class="col-lg-3 col-sm-6 col-12">
                 <h4 class="centrado">Redes Sociales</h4>
                 <ul>
                     <li><a href="https://www.facebook.com/PastasBettini" target="_blank">Facebook</a></li>
@@ -236,13 +262,13 @@
                 </ul>
             </div>
         </div>
-        <div class="footerSecundarioFondo">
-            <div class="container footerSecundario">
+        <div class="container">
+            <div class="row footerSecundario">
 
-                <div>
+                <div class="col-lg-2 col-sm-6 col-12">
                     <img class="footerImg" src="images/logo_indupas_pie.png" alt="Logo Indupas">
                 </div>
-                <div>
+                <div class="col-lg-8 col-sm-6 col-12">
                     <p>Av. Vélez Sarsfield 5087 (ex 4987) - Córdoba - Argentina Tel: +54 (351) 4930006 - Fax: +54 (351)
                         4930009</p>
 
@@ -258,6 +284,8 @@
 
         </div>
     </footer>
+
+    <script src="js/bootstrap.js"></script>
 
 </body>
 
