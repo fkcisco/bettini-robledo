@@ -6,6 +6,10 @@
 
 }
 
+ol, ul, dl {
+    margin-bottom: 0 !important;
+}
+
 ul li {
     list-style-type: none;
 }
@@ -279,10 +283,10 @@ aside img {
     padding: 0 0 5px 0;
 }
 
-.container {
+/*.container {
     width: 1090px;
     margin: 0 auto;
-}
+}*/
 
 #detalleReceta main,
 #detalleProducto main {
@@ -363,8 +367,31 @@ p span {
     background-color: #2c2b2b;
 }
 
-.fondoGrisClaro {
-    background-color: #c7c7c7;
+.fondoHeaderTop {
+    background-color: #b90411;
+}
+
+nav a {
+    color: grey !important;
+    font-weight: 700;
+}
+nav ul li:hover,
+nav a:hover {
+    text-decoration: none;
+    background-color: red;
+    color: white !important;
+}
+
+.fondoHeaderTop a,
+.fondoHeaderTop i {
+    color: white !important;
+}
+
+.fondoHeaderTop a:hover,
+.fondoHeaderTop i:hover {
+    text-decoration: none;
+    color: yellow !important;
+    font-weight: 700;
 }
 
 
@@ -665,6 +692,18 @@ footer ul li {
     text-align: center;
 }
 
+footer ul li a,
+footer p {
+    text-align: center;
+    color: white;
+}
+
+footer ul li a:hover {
+    font-weight: 700 !important;
+    text-decoration: none;
+    color: yellow;
+}
+
 
 .footerSecundario p {
     text-align: left;
@@ -728,11 +767,11 @@ img {
     /*max-width: 100%;*/
 }
 
-#home section,
+/*#home section,
 #recetas section,
 .footerConjuntoColumnas {
     padding: 100px 0;
-}
+}*/
 
 #productos section {
     padding: 50px 0;
@@ -844,7 +883,7 @@ img {
 
 .footerCopyright {
     background-color: black;
-    padding: 10px 0;
+   /* padding: 10px 0;*/
 }
 .footerCopyright p {
     color: #ffffff;
@@ -923,28 +962,28 @@ img {
 
 /* FLEX + GRIDS + BOX MODELIN */
 
-header {
+/*header {
     display: grid;
     grid-template-areas:
         "header-top"
         "header-logo"
         "header-menu";
     grid-template-columns: 100%;
-}
+}*/
 
-#headerTop {
+/*#headerTop {
     grid-area: header-top;
-}
+}*/
 
-#headerLogo {
+/*#headerLogo {
     grid-area: header-logo;
     display: flex;
     justify-content: center;
-}
+}*/
 
-#headerMenu {
+/*#headerMenu {
     grid-area: header-menu;
-}
+}*/
 
 .headerTopElementos {
     display: flex;
@@ -957,9 +996,9 @@ header {
     justify-content: center;
 }
 
-#menuBar {
+/*#menuBar {
     display: none;
-}
+}*/
 
 .conjuntoVcardHorizontal {
     display: flex;
@@ -981,11 +1020,11 @@ header {
     flex-wrap: wrap;
 }
 
-.footerSecundario {
+/*.footerSecundario {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+}*/
 
 .redesSociales {
     display: flex;
@@ -1188,14 +1227,14 @@ footer h4 {
 
 /* Desafio Index y pagina de receta */
 
-#home {
+/*#home {
     display: grid;
     grid-template-areas:
         "header"
         "main"
         "footer";
     grid-template-columns: 100%;
-}
+}*/
 
 #productoSingle {
     display:grid;
@@ -1244,10 +1283,10 @@ footer {
     grid-area: footer;
 }
 
-#home section {
+/*#home section {
     display: flex;
     flex-direction: column;
-}
+}*/
 
 #ingredientesReceta input[type="checkbox"],
 #ingredientesReceta .checkbox {
@@ -1307,6 +1346,10 @@ aside {
 
 */
 
+.menuBarImg {
+    width: 30px !important;
+}
+
 
 /* BOOTSTRAP*/
 
@@ -1317,21 +1360,26 @@ aside {
     border: 3px solid white;
     transition: all 1s;}
 
+    .container-fluid {       
+        padding-right: 0;
+        padding-left: 0;
+    }
+
 /* @MEDIA QUERY*/
 
 @media (max-width: 480px) {
 
-    .container {
+    /*.container {
         width: 95%;
-    }
+    }*/
 
-    header {
+    /*header {
         grid-template-areas:
             "header-top header-top"
             "header-logo header-menu";
         grid-template-columns: 70% 30%;
         grid-template-rows: auto auto;
-    }
+    }*/
 
     .headerTopElementos {
         flex-direction: row-reverse;
@@ -1351,10 +1399,7 @@ aside {
         display: none;
     }
 
-    .menuBarImg {
-        width: 30px;
-    }
-
+    
     #headerLogo {
         justify-content: start;
         padding-left: 15px;
@@ -1418,7 +1463,9 @@ aside {
         font-size: 2rem;
     }
 
-    
+    .redesSociales {
+        column-gap: 5px;
+    }
 
 
 
@@ -1643,9 +1690,9 @@ aside {
  
 
 @media (min-width: 481px) and (max-width: 1023px) {
-    .container {
+    /*.container {
         width: 90%;
-    }
+    }*/
 
     .headerMenuElementos li {
         padding: 15px 2%;
@@ -1664,8 +1711,8 @@ aside {
 
 
 @media (min-width: 1024px) {
-    .container {
-        width: 75%;}
+    /*.container {
+        width: 75%;}*/
 
         
 
