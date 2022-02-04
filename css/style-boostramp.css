@@ -38,6 +38,8 @@ footer .displayInlineBlock {
     margin-right: 20px;
 }
 
+
+
 .sectionProducto {
     color: black;
     padding: 15px 30px;
@@ -226,6 +228,7 @@ footer .displayInlineBlock {
     column-gap: 15px;
 }
 
+
 #pastasRellenas {
     background-image: url(../images/empresa-cordoba.png);
     display: flex;
@@ -237,10 +240,52 @@ footer .displayInlineBlock {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 25px 0;
-    margin-bottom: 50px;
-
+    /*padding: 25px 0;*/
+    /*margin-bottom: 50px;*/
 }
+#pastasFrescas {
+    background-image: url(../images/pasta-fresca.webp);
+    display: flex;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*padding: 25px 0;*/
+    /*margin-bottom: 50px;*/
+}
+#discosEmpanadas {
+    background-image: url(../images/discos-empanadas.webp);
+    display: flex;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*padding: 25px 0;*/
+    /*margin-bottom: 50px;*/
+}
+#discosPascualinas {
+    background-image: url(../images/discos-pascualinas.webp);
+    display: flex;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*padding: 25px 0;*/
+    /*margin-bottom: 50px;*/
+}
+
 
 .familiaProducto h2 {
     color: white;
@@ -610,8 +655,8 @@ nav {
 
 .headerMenuElementos li:hover,
 .headerMenuElementos li:hover a,
-.active,
-.active a {
+nav .active,
+nav .active a {
     background-color: red;
     color: white !important;
     font-weight: 700;
@@ -694,9 +739,14 @@ footer ul li {
 
 footer ul li a,
 footer p {
-    text-align: center;
+    text-align: left;
     color: white;
+    font-weight: 700;
+        text-shadow: 2px 2px black;
 }
+
+
+
 
 footer ul li a:hover {
     font-weight: 700 !important;
@@ -740,25 +790,25 @@ footer {
 
 h1 {
     font-size: 2rem;
-    padding: 30px 0;
+    /*padding: 30px 0;*/
     font-family: bree, sans-serif;
 }
 
 h2 {
     font-size: 1.8rem;
-    padding: 25px 0;
+    /*padding: 25px 0;*/
     font-family: bree, sans-serif;
 }
 
 h3 {
     font-size: 1.6rem;
-    padding: 20px 0;
+   /* padding: 20px 0;*/
     font-family: bree, sans-serif;
 }
 
 h4 {
     font-size: 1.4rem;
-    padding: 15px 0;
+  /*  padding: 15px 0;*/
     font-family: bree, sans-serif;
 }
 
@@ -773,9 +823,9 @@ img {
     padding: 100px 0;
 }*/
 
-#productos section {
+/*#productos section {
     padding: 50px 0;
-}
+}*/
 
 #empresa section,
 #comex section {
@@ -1365,6 +1415,70 @@ aside {
         padding-left: 0;
     }
 
+    .carousel-control-next,
+.carousel-control-prev {
+        border: 0px;
+        background-color: transparent;
+        opacity: 1;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.carousel-control-next:hover,
+.carousel-control-prev:hover {
+        opacity: 0.5;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: red;
+    border-color: red;
+    border-radius: 10px 0 10px 0;
+    font-weight: 700;
+}
+
+.btn-primary:hover {
+    color: white;
+    background-color: grey;
+    border-color: grey;
+}
+
+.btn-secondary {
+    color: red;
+    background-color: white;
+    border-color: white;
+    font-weight: 700;
+    border-radius: 10px 0 10px 0;
+}
+
+.btn-secondary:hover {
+    color: white;
+    background-color: red;
+    border-color: red;
+}
+
+.navbar-light .navbar-toggler {
+    color: red;
+    border-color: red;
+    background-color: red;
+}
+
+
+.carousel-caption {
+    bottom: 30%;}
+
+
+    #pastasRellenas h2,
+    #pastasFrescas h3,
+    #discosEmpanadas h4,
+    #discosPascualinas h5 {
+        color: white;
+        text-shadow: 2px 1px black;
+    }
+
 /* @MEDIA QUERY*/
 
 @media (max-width: 480px) {
@@ -1467,6 +1581,14 @@ aside {
         column-gap: 5px;
     }
 
+    .carousel .carousel-item img {
+        height: 70vh;
+        object-fit:cover
+      }
+
+      .carousel-caption {
+        bottom: 30%;}
+
 
 
 }
@@ -1487,8 +1609,11 @@ aside {
 
     .portadaImg{
         height: 60vh;
+        object-fit:cover
         }
 
+      
+        
 
 
 }
@@ -1683,7 +1808,8 @@ aside {
         border-bottom: 2px solid grey;
         margin: 0 auto;
     }
-        
+
+           
 
 }
 
@@ -1706,6 +1832,9 @@ aside {
         width: 49%;
     }
 
+    
+
+
 }
 
 
@@ -1713,6 +1842,12 @@ aside {
 @media (min-width: 1024px) {
     /*.container {
         width: 75%;}*/
+    
+    .carousel .carousel-item img {
+            height: 60vh;
+            object-fit:cover;
+        }
+
 
         
 

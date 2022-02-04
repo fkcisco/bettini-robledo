@@ -8,71 +8,102 @@
     <meta name="description" content="Bettini Fábrica de Pastas Italianas. Córdoba Argentina">
     <meta name="author" content="Francisco Robledo">
     <meta name="robots" content=" index,follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Catalogo de Productos | Fábrica de Pastas Italianas</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style-flex-grid.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style-boostramp.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+
     <link
         href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
         rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Bree+Serif:regular" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Mr+Dafoe:regular" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif:regular" rel="stylesheet" />
 </head>
 
 <body id="productos">
     <header>
-        <div id="headerTop" class="fondoGrisClaro">
-            <div class="container headerTopElementos">
+        <div class="container-fluid fondoHeaderTop py-2">
+            <div class="container">
 
-                <div>
-                    <img class="iconHeader" src="images/whatsapp-brands.svg" alt="Link Whatsapp">
-                    <a href="+5493512307538">Escribinos un WhatsApp</a>
+                <div class="row justify-content-around">
+                    <div class="col-ms-4 col-9">
+                        <i class="bi bi-whatsapp"></i>
+                        <a href="+5493512307538">Escribinos un WhatsApp</a>
+                    </div>
+                    <div class="col-ms-2 col-3">
+                        <ul class="redesSociales">
+                            <li><a href="https://www.facebook.com/PastasBettini" target="_blank"><i
+                                        class="bi bi-facebook"></i></a></li>
+                            <li><a href="https://www.instagram.com/bettinipastas/" target="_blank"><i
+                                        class="bi bi-instagram"></i></a> </li>
+                            <li><a href="https://www.linkedin.com/company/bettini/about/" target="_blank"><i
+                                        class="bi bi-linkedin"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div>
-                    <ul class="redesSociales">
-                        <li><a href="https://www.facebook.com/PastasBettini" target="_blank"><img class="iconHeader"
-                                    src="images/facebook-brands.svg" alt="Link Facebook"></a></li>
-                        <li><a href="https://www.instagram.com/bettinipastas/" target="_blank"><img class="iconHeader"
-                                    src="images/instagram-brands.svg" alt="Link Instagram"></a></li>
-                        <li><a href="https://www.linkedin.com/company/bettini/about/" target="_blank"><img
-                                    class="iconHeader" src="images/linkedin-brands.svg" alt="Linkedin"></a></li>
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <a href="index.html">
+                        <img class="logo my-2" src="images/logo-header.webp" alt="Logo Pastas Bettini">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container justify-content-center">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav pt-2 pt-lg-0 text-center">
+                        <li class="nav-item px-4 py-2">
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item px-4 py-2">
+                            <a href="empresa.html">Empresa</a>
+                        </li>
+                        <li class="nav-item px-4 py-2 active">
+                            <a href="productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item px-4 py-2">
+                            <a href="comex.html">Comex</a>
+                        </li>
+                        <li class="nav-item px-4 py-2">
+                            <a href="recetas.html">Recetas</a>
+                        </li>
+                        <li class="nav-item px-4 py-2">
+                            <a href="contacto.html">Contacto</a>
+                        </li>
+
                     </ul>
                 </div>
             </div>
-        </div>
-        <div id="headerLogo">
-            <a href="index.html">
-                <img class="logo" src="images/logo-header.webp" alt="Logo Pastas Bettini">
-            </a>
-        </div>
-
-        <nav id="headerMenu">
-            <ul class="headerMenuElementos">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="empresa.html">Empresa</a></li>
-                <li class="active"><a href="productos.html">Productos</a></li>
-                <li><a href="comex.html">Comex</a></li>
-                <li><a href="recetas.html">Recetas</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-            <div id="menuBar">
-                <img class="menuBarImg" src="images/bars-solid.svg" alt="Menu Hamburguesa">
-            </div>
-
-
         </nav>
+
+
+
     </header>
 
     <main>
         <div>
-            <!--<h1 class="titulo">Conocé toda la familia de nuestros Productos</h1>     -->
+            <h1 class="titulo my-5">Conocé toda la familia de nuestros Productos</h1>
             <section>
-                <div class="familiaProducto" id="pastasRellenas">
+                <div class="container-fluid py-5 mb-5" id="pastasRellenas">
                     <h2 class="centrado titulo">Pastas Rellenas</h2>
                 </div>
                 <article class="container">
-                    <div class="listadoProductos">
-                        <div class="vCard">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 text-center">
                             <a href="productos/raviol-pollo-carne-espinaca.html">
                                 <img class="imgCatalogo" src="images/ravioles-pollo-carne-espinaca-ban.png"
                                     alt="Ravioles Pollo Carne y Espinaca Bettini">
@@ -80,14 +111,14 @@
                             <p class="textoGrande">Ravioles</p>
                             <p class="textoChico"> Pollo, Carne y Espinaca</p>
                         </div>
-                        <div class="vCard">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 text-center">
                             <a href="productos/raviol-pollo-carne-espinaca.html">
                                 <img class="imgCatalogo" src="images/ravioles-pollo-carne-espinaca-ban.png"
                                     alt="Ravioles Pollo Carne y Espinaca Bettini">
                                 <p class="textoGrande">Ravioles</p>
                                 <p class="textoChico"> Cuatro Quesos</p>
                         </div>
-                        <div class="vCard">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 text-center">
                             <a href="productos/raviol-pollo-carne-espinaca.html">
                                 <img class="imgCatalogo" src="images/ravioles-pollo-carne-espinaca-ban.png"
                                     alt="Ravioles Pollo Carne y Espinaca Bettini">
@@ -95,7 +126,7 @@
                             <p class="textoGrande">Ravioles</p>
                             <p class="textoChico">Verdura</p>
                         </div>
-                        <div class="vCard">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 text-center">
                             <a href="productos/raviol-pollo-carne-espinaca.html">
                                 <img class="imgCatalogo" src="images/sorrentinos-ricotta-jamon-queso.png"
                                     alt="Sorrentinos Ricotta Jamón y Queso Bettini">
@@ -103,14 +134,14 @@
                             <p class="textoGrande">Sorrentinos</p>
                             <p class="textoChico">Ricotta, Jamón y Queso</p>
                         </div>
-                        <div class="vCard">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 text-center">
                             <a href="productos/raviol-pollo-carne-espinaca.html">
                                 <img class="imgCatalogo" src="images/tallarines-ban.png" alt="Tallarines Bettini">
                             </a>
                             <p class="textoGrande">Cappellettis</p>
                             <p class="textoChico"> Carne</p>
                         </div>
-                        <div class="vCard">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 text-center">
                             <a href="productos/raviol-pollo-carne-espinaca.html">
                                 <img class="imgCatalogo" src="images/noquis-papa.png" alt="Ñoquis Bettini">
                             </a>
@@ -122,26 +153,26 @@
                 </article>
             </section>
             <section>
-                <div class="familiaProducto" id="pastasRellenas">
-                    <h2 class="centrado titulo">Pastas Frescas</h2>
+                <div class="container-fluid py-5 my-5" id="pastasFrescas">
+                    <h3 class="centrado titulo h2">Pastas Frescas</h3>
                 </div>
                 <article class="container">
-                    <div class="listadoProductos">
-                        <div class="vCard">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 text-center">
                             <a href="productos/raviol-pollo-carne-espinaca.html">
                                 <img class="imgCatalogo" src="images/tallarines-ban.png" alt="Tallarines Bettini">
                             </a>
                             <p class="textoGrande">Tallarines</p>
                             <p class="textoChico"> Huevo</p>
                         </div>
-                        <div class="vCard">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 text-center">
                             <a href="productos/raviol-pollo-carne-espinaca.html">
                                 <img class="imgCatalogo" src="images/noquis-papa.png" alt="Ñoquis Bettini">
                             </a>
                             <p class="textoGrande">Ñoquis</p>
                             <p class="textoChico"> Papa</p>
                         </div>
-                        <div class="vCard">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 text-center">
                             <a href="productos/raviol-pollo-carne-espinaca.html">
                                 <img class="imgCatalogo" src="images/noquis-papa.png" alt="Ñoquis Bettini">
                             </a>
@@ -151,25 +182,25 @@
                     </div>
                 </article>
             </section>
-            <section id="discosEmpanadas">
-                <div class="familiaProducto" id="pastasRellenas">
-                    <h2 class="centrado titulo">Discos de Empanadas</h2>
+            <section>
+                <div class="container-fluid py-5 my-5" id="discosEmpanadas">
+                    <h4 class="centrado titulo h2">Discos de Empanadas</h4>
                 </div>
                 <article class="container">
-                    <div class="listadoProductos">
-                        <div class="vCard">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 text-center">
                             <a href="productos/raviol-pollo-carne-espinaca.html">
                                 <img class="imgCatalogo" src="images/tallarines-ban.png" alt="Tallarines Bettini">
                             </a>
                             <p class="textoGrande">Empanadas Horno</p>
                         </div>
-                        <div class="vCard">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 text-center">
                             <a href="productos/raviol-pollo-carne-espinaca.html">
                                 <img class="imgCatalogo" src="images/noquis-papa.png" alt="Ñoquis Bettini">
                             </a>
                             <p class="textoGrande">Empanadas Freír</p>
                         </div>
-                        <div class="vCard">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 text-center">
                             <a href="productos/raviol-pollo-carne-espinaca.html">
                                 <img class="imgCatalogo" src="images/noquis-papa.png" alt="Ñoquis Bettini">
                             </a>
@@ -178,19 +209,19 @@
                     </div>
                 </article>
             </section>
-            <section id="discosPascualinas">
-                <div class="familiaProducto" id="pastasRellenas">
-                    <h2 class="centrado titulo">Discos Pascualinas</h2>
+            <section>
+                <div class="container-fluid py-5 my-5" id="discosPascualinas">
+                    <h5 class="centrado titulo h2">Discos Pascualinas</h5>
                 </div>
                 <article class="container">
-                    <div class="listadoProductos">
-                        <div class="vCard">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 text-center">
                             <a href="productos/raviol-pollo-carne-espinaca.html">
                                 <img class="imgCatalogo" src="images/tallarines-ban.png" alt="Tallarines Bettini">
                             </a>
                             <p class="textoGrande">Pascualinas</p>
                         </div>
-                        <div class="vCard">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 text-center">
                             <a href="productos/raviol-pollo-carne-espinaca.html">
                                 <img class="imgCatalogo" src="images/noquis-papa.png" alt="Ñoquis Bettini">
                             </a>
@@ -202,99 +233,111 @@
 
         </div>
 
-        <section id="banners" class="fondoGrisClarito sectionPadding">
+        <section class="container-fuir fondoGrisClarito mt-5 py-5">
             <article class="container">
-                <div class="conjuntoVcardHorizontal">
-                    <div class="vCard">
+                <div class="row py-5">
+                    <div class="col-lg-3 col-sm-6 col-12">
                         <a href="empresa.html#cordoba">
-                            <img src="images/exportamos-productos.jpg" alt="Banner Desde Córdoba al Mundo">
+                            <img class="imgVcard" src="images/exportamos-productos.jpg"
+                                alt="Banner Desde Córdoba al Mundo">
                             <p class="bold">Desde Córdoba Al Mundo</p>
                         </a>
                     </div>
-                    <div class="vCard">
+                    <div class="col-lg-3 col-sm-6 col-12">
                         <a href="empresa.html#planta">
-                            <img src="images/raviolesmarcablanca.jpg" alt="Banner Nueva Planta">
+                            <img class="imgVcard" src="images/raviolesmarcablanca.jpg" alt="Banner Nueva Planta">
                         </a>
                         <p class="bold">Nueva Planta</p>
                     </div>
-                    <div class="vCard">
+                    <div class="col-lg-3 col-sm-6 col-12">
                         <a href="empresa.html#responsabilidad">
-                            <img src="images/recetasbettini.jpg" alt="Banner Responsabilidad Empresarial">
+                            <img class="imgVcard" src="images/recetasbettini.jpg"
+                                alt="Banner Responsabilidad Empresarial">
                             <p class="bold">Responsabilidad Social</p>
                         </a>
                     </div>
-                    <div class="vCard">
+                    <div class="col-lg-3 col-sm-6 col-12">
                         <a href="contacto.html">
-                            <img src="images/contacto.jpg" alt="Banner Contacto">
+                            <img class="imgVcard" src="images/contacto.jpg" alt="Banner Contacto">
                             <p class="bold">Contacto</p>
                         </a>
                     </div>
                 </div>
+
             </article>
         </section>
-
     </main>
-    <footer class="fondoGrisClaro">
-        <div class="container footerConjuntoColumnas">
-            <div class="columna">
-                <h4 class="centrado">Empresa</h4>
-                <ul>
-                    <li><a href="empresa.html#calidad">Calidad, Sabor y Prestigio</a></li>
-                    <li><a href="empresa.html#planta">Nueva Planta, Nuevas Líneas.</a></li>
-                    <li><a href="empresa.html#cordoba">Desde Córdoba al Mundo</a></li>
-                </ul>
-            </div>
-            <div class="columna">
-                <h4 class="centrado">Comex</h4>
-                <ul>
-                    <li><a href="productos.html">Productos</a></li>
-                    <li><a href="comex.html#mercados">Nuestros Mercados</a></li>
-                    <li><a href="comex.html#partner">Partner Comercial</a></li>
-
-                </ul>
-            </div>
-            <div class="columna">
-                <h4 class="centrado">Cocina</h4>
-                <!--LOS LINKS DE COMO COCINAR CADA TIPO DE PASTA LLEVARIA A CADA PRODUCTO-->
-                <!--POR ESO LINKIE TODOS AL MISMO TIPO DE PASTA-->
-                <ul>
-                    <li><a href="productos/raviol-pollo-carne-espinaca.html#comoCocinar">Como Cocinar Ravioles</a></li>
-                    <li><a href="productos/raviol-pollo-carne-espinaca.html#comoCocinar">Como Cocinar Tallarines</a>
-                    </li>
-                    <li><a href="productos/raviol-pollo-carne-espinaca.html#comoCocinar">Como Cocinar Ñoquis</a></li>
-                </ul>
-            </div>
-            <div class="columna">
-                <h4 class="centrado">Redes Sociales</h4>
-                <ul>
-                    <li><a href="https://www.facebook.com/PastasBettini" target="_blank">Facebook</a></li>
-                    <li><a href="https://www.instagram.com/bettinipastas/" target="_blank">Instagram</a></li>
-                    <li><a href="https://www.linkedin.com/company/bettini/about/" target="_blank">Linkedin</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footerSecundarioFondo">
-            <div class="container footerSecundario">
-
-                <div>
-                    <img class="footerImg" src="images/logo_indupas_pie.png" alt="Logo Indupas">
+    <footer class="container-fluid fondoGrisClaro pt-5">
+        <div class="container">
+            <div class="row my-5">
+                <div class="col-lg-3 col-sm-6 col-12 pb-5">
+                    <h4 class="centrado">Empresa</h4>
+                    <ul>
+                        <li><a href="empresa.html#calidad">Calidad, Sabor y Prestigio</a></li>
+                        <li><a href="empresa.html#planta">Nueva Planta, Nuevas Líneas.</a></li>
+                        <li><a href="empresa.html#cordoba">Desde Córdoba al Mundo</a></li>
+                    </ul>
                 </div>
-                <div>
-                    <p>Av. Vélez Sarsfield 5087 (ex 4987) - Córdoba - Argentina Tel: +54 (351) 4930006 - Fax: +54 (351)
-                        4930009</p>
-
-                    <p>Políticas de Privacidad.</p>
+                <div class="col-lg-3 col-sm-6 col-12 pb-5">
+                    <h4 class="centrado">Comex</h4>
+                    <ul>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="comex.html#mercados">Nuestros Mercados</a></li>
+                        <li><a href="comex.html#partner">Partner Comercial</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 pb-5">
+                    <h4 class="centrado">Cocina</h4>
+                    <ul>
+                        <li><a href="productos/raviol-pollo-carne-espinaca.html#comoCocinar">Como Cocinar Ravioles</a>
+                        </li>
+                        <li><a href="productos/raviol-pollo-carne-espinaca.html#comoCocinar">Como Cocinar Tallarines</a>
+                        </li>
+                        <li><a href="productos/raviol-pollo-carne-espinaca.html#comoCocinar">Como Cocinar Ñoquis</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 pb-5">
+                    <h4 class="centrado">Redes Sociales</h4>
+                    <ul>
+                        <li><a href="https://www.facebook.com/PastasBettini" target="_blank">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/bettinipastas/" target="_blank">Instagram</a></li>
+                        <li><a href="https://www.linkedin.com/company/bettini/about/" target="_blank">Linkedin</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <div class="footerCopyright">
+        <div class="container-fluid footerSecundarioFondo pt-5">
             <div class="container">
-                <p>Copyright © 2022 - Bettini y Don Ravioli son propiedad de INDUPAS SRL. Todos los derechos
+                <div class="row">
+                    <div class="col-lg-2 col-sm-6 col-12">
+                        <img src="images/indupas-01.svg" alt="Logo Indupas">
+                    </div>
+                    <div class="col-lg-8 col-sm-6 col-12">
+                        <p>Av. Vélez Sarsfield 5087 (ex 4987) - Córdoba - Argentina Tel: +54 (351) 4930006 - Fax: +54
+                            (351)
+                            4930009</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footerCopyright py-3">
+            <div class="container">
+                <p>Copyright © 2022 - Bettini y Don Ravioli son propiedad de INDUPAS SRL.
+                    <!--<a href="#">Políticas de
+                        Privacidad.</a> --> Todos los derechos
                     reservados. | Desarrollo Web con amor por Franrobledo</p>
             </div>
 
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
 
 </body>
 
