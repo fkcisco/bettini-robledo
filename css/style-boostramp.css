@@ -1530,9 +1530,9 @@ aside {
 }
 
 
-.carousel-caption {
+/*.carousel-caption {
     bottom: 30%;
-}
+}*/
 
 ul.list-inline {
     text-align: center
@@ -1651,9 +1651,9 @@ ul.list-inline {
         object-fit: cover
     }
 
-    .carousel-caption {
+    /*.carousel-caption {
         bottom: 30%;
-    }
+    }*/
 
 
 
@@ -1682,6 +1682,12 @@ ul.list-inline {
 
 
 
+}
+
+@media (max-width: 575px) {
+    .itemSectionProductos {
+        text-align: center;
+    }
 }
 
 @media (max-width: 680px) {
@@ -1857,6 +1863,8 @@ ul.list-inline {
 
 
 }
+
+
 
 
 
