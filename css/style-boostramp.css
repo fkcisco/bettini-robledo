@@ -1053,6 +1053,7 @@ img {
 
 .rotar3 {
     transform: rotate(-3deg);
+    animation: all 1s;
 }
 
 .blancoYnegro {
