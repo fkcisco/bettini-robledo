@@ -894,7 +894,7 @@ img {
     }*/
 
 
-   
+
 .separadorImg {
     width: 100px;
     margin: 0 auto;
@@ -1233,7 +1233,7 @@ img {
 }
 
 #tituloReceta {
-   /* grid-area: titulo-receta;*/
+    /* grid-area: titulo-receta;*/
     /*display: flex;*/
     background-image: url(../images/receta-base.png);
     width: 100%;
@@ -1480,7 +1480,7 @@ aside {
     transform: rotate(-3deg);
 }
 
-.productoImg{
+.productoImg {
     transition: all 1s;
 }
 
@@ -1553,9 +1553,9 @@ aside {
 
 ul.list-inline {
     text-align: center
-  }
+}
 
-#detalleProducto .row { 
+#detalleProducto .row {
     margin-right: 0 !important;
     margin-left: 0 !important;
 }
@@ -1742,7 +1742,7 @@ ul.list-inline {
 
     }
 
-    
+
 
     .recetaResumen {
         display: flex;
@@ -1765,7 +1765,7 @@ ul.list-inline {
         text-align: center;
     }
 
-    
+
 
     .detalle {
         text-align: center;
@@ -1873,9 +1873,9 @@ ul.list-inline {
         grid-row-gap: 20px;
     }
 
-    
 
-   
+
+
 
 
 
@@ -1908,40 +1908,40 @@ ul.list-inline {
 }
 
 @media (max-width: 992px) {
-#datosContacto {
-    text-align: center;
-}
+    #datosContacto {
+        text-align: center;
+    }
 
-.contactoBorder {
-    width: 80%;
-    border-bottom: 2px solid grey;
-    margin: 0 auto;
-}
+    .contactoBorder {
+        width: 80%;
+        border-bottom: 2px solid grey;
+        margin: 0 auto;
+    }
 
-#detalleReceta {
-    grid-area: detalle-receta;
-    display: grid;
-    grid-template-areas:
-        "presentacion-receta"
-        "item-receta"
-        "ingredientes-receta "
-        "proceso-receta"
-    ;
-    grid-template-columns: 100%;
-    grid-column-gap: 15px;
-}
+    #detalleReceta {
+        grid-area: detalle-receta;
+        display: grid;
+        grid-template-areas:
+            "presentacion-receta"
+            "item-receta"
+            "ingredientes-receta "
+            "proceso-receta"
+        ;
+        grid-template-columns: 100%;
+        grid-column-gap: 15px;
+    }
 
-.mainAside {
-    justify-content: space-between;
-}
+    .mainAside {
+        justify-content: space-between;
+    }
 
-#itemReceta {
-    flex-direction: row;
-}
+    #itemReceta {
+        flex-direction: row;
+    }
 
-#botonVolverReceta {
-    display: none;
-}
+    #botonVolverReceta {
+        display: none;
+    }
 
 }
 
@@ -1953,7 +1953,8 @@ ul.list-inline {
 
     .carousel .carousel-item img {
         height: 60vh;
-        object-fit: cover;   }  
+        object-fit: cover;
+    }
 
 
 
